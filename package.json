@@ -1,0 +1,24 @@
+{
+  "name": "cursor_q",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "lint": "npm run lint --workspace web",
+    "firebase:emulators": "firebase emulators:start --only auth,firestore,functions",
+    "firebase:open": "firebase emulators:ui",
+    "firebase:logs": "firebase functions:log"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "firebase-tools": "^13.17.0"
+  }
+}

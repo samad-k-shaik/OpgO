@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+.env
+apps/web/.env
+apps/web/dist
+apps/functions/node_modules
+apps/functions/lib
+.firebase
+.gemini
